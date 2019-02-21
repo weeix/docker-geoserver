@@ -18,7 +18,7 @@ You can test it by visiting `http://localhost:8080/geoserver` or `http://host-ip
 
 To mount a directory from your host to the container's local storage:
 
-    $ docker run --rm -d -p 8080:8080 -v "$(pwd)"/data:/usr/local/tomcat/temp/geoserver --name gwc weeix/geoserver
+    $ docker run --rm -d -p 8080:8080 -v "$(pwd)"/data:/usr/local/tomcat/webapps/geoserver/data --name geoserver weeix/geoserver
 
 The default administrator's username/password is `admin`/`geoserver`. You can change them by using the GUI.
 
