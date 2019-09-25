@@ -1,6 +1,6 @@
 FROM tomcat:8
 
-ARG GS_VERSION=2.15.2
+ARG GS_VERSION=2.15.3
 
 RUN cd /usr/local/tomcat/webapps/ \
     && curl -SL https://sourceforge.net/projects/geoserver/files/GeoServer/${GS_VERSION}/geoserver-${GS_VERSION}-war.zip/download --output geoserver.war.zip \
